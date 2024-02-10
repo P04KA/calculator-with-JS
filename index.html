@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Логотип PurpleSchool" />
+      </div>
+      <h1>Калькулятор вклада</h1>
+      <form action="#" onsubmit="submitData(event)">
+        <div class="field">
+          <img src="./images/sum.svg" alt="иконка суммы" />
+          <label for="sum">Сумма</label>
+          <input
+            type="number"
+            id="sum"
+            placeholder="Введите сумму вклада"
+            name="sum"
+            value="100000"
+            required
+          />
+        </div>
+        <div class="field">
+          <img src="./images/clock.svg" alt="иконка часов" />
+          <label for="day">Срок в днях</label>
+          <input
+            type="number"
+            id="day"
+            placeholder="Срок в месяцах"
+            name="day"
+            value="365"
+            required
+          />
+        </div>
+        <div class="field">
+          <img src="./images/percent.svg" alt="иконка процента" />
+          <label for="percent">Процентная ставка в %</label>
+          <input
+            type="number"
+            id="month"
+            placeholder="Процентная ставка"
+            name="percent"
+            value="8"
+            required
+          />
+        </div>
+        <div class="field">
+          <img src="./images/question.svg" alt="иконка вопроса" />
+          <label for="capital">Капитализация</label>
+          <select name="isCapital" id="capital" required>
+            <option value="yes">Да</option>
+            <option value="no">Нет</option>
+          </select>
+        </div>
+        <button>Расчитать</button>
+      </form>
+      <div class="result"></div>
+    </main>
+  </body>
+</html>
